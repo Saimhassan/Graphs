@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/scatterPlot" />
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="Add Point"
+        android:id="@+id/btnAddPt1"
+        android:layout_below="@id/scatterPlot"/>
+
+    <EditText
+    android:background="@android:color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:textSize="20sp"
+    android:textAlignment="center"
+    android:hint="x"
+    android:textColor="@android:color/black"
+    android:inputType="numberSigned"
+    android:ems="10"
+    android:layout_below="@id/scatterPlot"
+    android:layout_alignParentStart="true"
+    android:id="@+id/nuMx"
+    android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:background="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:hint="y"
+        android:textColor="@android:color/black"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:layout_below="@id/nuMx"
+        android:layout_alignParentStart="true"
+        android:id="@+id/nuMy"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>
